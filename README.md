@@ -65,7 +65,7 @@ Toma un grafo creado y crea una imagen que muestra intuitivamente su Pagerank.
   
 Para correr el archivo, simplemente correr el comando `python "grafico a png.py" -f "file_name"` o `python "grafico a png.py" --input_file "file_name"` , donde file_name es la dirección donde se guardará el archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
   
-El .png creado será como el siguiente.
+El .png creado será como el siguiente, el cual será guardado en la misma carpeta de ejecución como "grafico.png".
 
   <p align="center">
   <img  src="https://i.imgur.com/Z81OzTa.png">
