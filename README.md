@@ -16,8 +16,6 @@ Para utilizar nuestro programa, se necesita Python 3+, y los siguientes packetes
 
 El programa consta de 4 archivos, que serán explicados.
 
-Para correr el archivo, simplemente correr el comando `python main.py -f "file_name"` o `python main.py --input_file "file_name"` , donde file_name es la dirección del archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
-
 ### _1 - crear grafico.py_
 
 Este archivo crea un archivo .txt con un grafo al azar para que lo pueda ejecutar.
