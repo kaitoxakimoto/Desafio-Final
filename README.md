@@ -1,7 +1,7 @@
 # Desafío 5 - Investigación PageRank
 
 
-Bienvenido a Desafio 5. Este programa es una implementación de PageRank, con pesos ya dados. 
+Bienvenido a Desafio 5. Este programa es una implementación de PageRank, generando el grafo o tomando unos ya generados. 
 
 <br></br>
 
