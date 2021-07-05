@@ -31,9 +31,9 @@ for i in range(iteration):
 for pagerank_list in all_pagerank:
     plt.plot(pagerank_list)
 
-plt.title('PageRank on iteration')
+plt.title('Pagerank segun iteracion')
 plt.legend([node.name for node in graph.nodes])
-plt.xlabel('Iteration')
-plt.ylabel('Value')
+plt.xlabel('Iteracion')
+plt.ylabel('Valor')
 
 plt.show()
