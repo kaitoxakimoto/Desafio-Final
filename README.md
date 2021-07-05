@@ -8,9 +8,11 @@ Bienvenido a Desafio 5. Este programa es una implementación de PageRank, con pe
 ## _Instrucciones de uso_
 
 Para utilizar nuestro programa, se necesita Python 3+, y los siguientes packetes.
-* Numpy (pip install numpy)
-* Pandas (pip install pandas)
-* sklearn (pip install scikit-learn)
+* itertools
+* random
+* time
+* matplotlib
+* networkx
 
 Además de contener el archivo "games.csv" en la raíz, el cual conteine los datos de las partidas.
 
