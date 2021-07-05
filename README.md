@@ -59,7 +59,7 @@ Luego, este imprimirá cada 10000 iteraciones donde esta ejecutandose en el proc
 
 ## _Link de la presentación_
 
-[Presentación en YouTube.](https://docs.google.com/presentation/d/1bWB1WOoF2aFlIQS1ReCPWts8gtawLPYGU5zp6Y3nV54/edit#slide=id.p)
+[Presentación en Google Docs.](https://docs.google.com/presentation/d/1bWB1WOoF2aFlIQS1ReCPWts8gtawLPYGU5zp6Y3nV54/edit#slide=id.p)
 
 [![Desafío 5:
 Investigación PageRank
