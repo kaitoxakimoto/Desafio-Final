@@ -14,9 +14,36 @@ Para utilizar nuestro programa, se necesita Python 3+, y los siguientes packetes
 * matplotlib
 * networkx
 
-Además de contener el archivo "games.csv" en la raíz, el cual conteine los datos de las partidas.
+El programa consta de 4 archivos, que serán explicados.
 
-Para correr la aplicación, simplemente correr el comando `python main.py`
+Para correr el archivo, simplemente correr el comando `python main.py -f "file_name"` o `python main.py --input_file "file_name"` , donde file_name es la dirección del archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
+
+### _1 - crear grafico.py_
+
+Este archivo crea un archivo .txt con un grafo al azar para que lo pueda ejecutar.
+
+Para correr el archivo, simplemente correr el comando `python "crear grafico.py" -f "file_name"` o `python "crear grafico.py" --input_file "file_name"` , donde file_name es la dirección donde se guardará el archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
+
+Este archivo debe ser ejecutado para poder ejecutar los siguientes, a menos que ya se tenga un grafo con la misma estructura.
+
+
+  <p align="center">
+  <img  src="https://i.imgur.com/6KFrZru.png">
+  
+</p>
+<p align="center">
+  Fig 1.1 Esctructura del archivo de grafos.
+</p>
+
+
+
+
+
+### _2 - main.py_
+
+Toma un archivo con un grafo y muestra en pantalla el Pagerank generado.
+
+Para correr el archivo, simplemente correr el comando `python main.py -f "file_name"` o `python main.py --input_file "file_name"` , donde file_name es la dirección del archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
 
 
 
@@ -24,19 +51,64 @@ Para correr la aplicación, simplemente correr el comando `python main.py`
 
 
 <p align="center">
-  <img  src="https://i.imgur.com/FOCjLFY.png">
+  <img  src="https://i.imgur.com/Dc3AZt1.png">
   
 </p>
 <p align="center">
-  Fig 1.1 Comando de ejecución.
+  Fig 1.2 Comando de ejecución de main.py
 </p>
 
+  
+### _3 - grafico a png.py_
 
-Luego, este imprimirá cada 10000 iteraciones donde esta ejecutandose en el proceso de train, siguiente realizando la fase test, imprimiendo el ganador de cada partida de la predicción, finalmente mostrando la precisión final de estas.
+Toma un grafo creado y crea una imagen que muestra intuitivamente su Pagerank.
+  
+Para correr el archivo, simplemente correr el comando `python "grafico a png.py" -f "file_name"` o `python "grafico a png.py" --input_file "file_name"` , donde file_name es la dirección donde se guardará el archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
+  
+El .png creado será como el siguiente.
+
+  <p align="center">
+  <img  src="https://i.imgur.com/Z81OzTa.png">
+  
+</p>
+<p align="center">
+  Fig 1.3 Representación grafica del grafo de PageRank.
+</p>
+
+  
+### _4 - estabilidad.py_
+  
+A partir de un grafo, muestra en pantalla como evoluciona el Pagerank en alcanzar su estabilidad.
+  
+Para correr el archivo, simplemente correr el comando `python estabilidad.py -f "file_name"` o `python estabilidad.py --input_file "file_name"` , donde file_name es la dirección donde se guardará el archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
 
 
+  
 
+  <p align="center">
+  <img  src="https://i.imgur.com/hoOZc1w.png">
+  
+</p>
+<p align="center">
+  Fig 1.4 Representación grafica de la estabilidad de PageRank.
+</p>
 
+### _5 - node time.py_
+  
+Crea un gráfico simulando grafos cada vez más complejos y luego muestra cuánto tiempo se demora en computar su Pagerank.
+  
+Para correr el archivo, simplemente correr el comando `python "node time.py".
+ 
+  <p align="center">
+  <img  src="https://i.imgur.com/y1EYXn3.png">
+  
+</p>
+<p align="center">
+  Fig 1.5 Representación grafica de la estabilidad de PageRank.
+</p>  
+ 
+  
+  
 
 # _Coevaluación_
 
