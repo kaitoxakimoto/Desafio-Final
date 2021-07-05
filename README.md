@@ -57,7 +57,7 @@ Luego, este imprimirá cada 10000 iteraciones donde esta ejecutandose en el proc
 <br></br>
 
 
-## _Presentación en video_
+## _Link de la presentación_
 
 [Presentación en YouTube.](https://www.youtube.com/watch?v=UwikvGJ8IwQ)
 
