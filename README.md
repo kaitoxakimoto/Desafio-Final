@@ -22,7 +22,7 @@ Este archivo crea un archivo .txt con un grafo al azar para que lo pueda ejecuta
 
 Para correr el archivo, simplemente correr el comando `python "crear grafico.py" -f "file_name"` o `python "crear grafico.py" --input_file "file_name"` , donde file_name es la dirección donde se guardará el archivo, en caso de que no se especifique, el archivo por default sera `dataset/node.txt`.
 
-Este archivo debe ser ejecutado para poder ejecutar los siguientes, a menos que ya se tenga un grafo con la misma estructura.
+Este archivo debe ser ejecutado para poder ejecutar los siguientes, a menos que ya se tenga un grafo con la misma estructura, donde cada linea tiene una conexión de nodo A a nodo B.
 
 
   <p align="center">
