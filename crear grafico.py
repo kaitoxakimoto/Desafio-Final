@@ -1,6 +1,16 @@
 import itertools
 import random
+from optparse import OptionParser
 
+optparser = OptionParser()
+optparser.add_option('-f', '--input_file',
+                        dest='input_file',
+                        help='CSV filename',
+                        default='dataset/node.txt')
+
+(options, args) = optparser.parse_args()
+
+file_path = options.input_file
 node_num = 14
 
 
@@ -11,7 +21,7 @@ edge_pool = list(itertools.permutations(node_list, 2))
 for i in range(edge_num):
     edge = random.choice(edge_pool)
     edges.append(edge)
-with open('dataset/node.txt', 'w') as f:
+with open(file_path, 'w') as f:
     for edge in edges:
         f.write(f'{edge[0]},{edge[1]}\n')
 

@@ -11,11 +11,17 @@ def output_PageRank(iteration, graph, damping_factor):
 
 if __name__ == '__main__':
 
+    optparser = OptionParser()
+    optparser.add_option('-f', '--input_file',
+                         dest='input_file',
+                         help='CSV filename',
+                         default='dataset/node.txt')
 
-    file_path = 'dataset/node.txt'
+    (options, args) = optparser.parse_args()
+
+    file_path = options.input_file
     iteration = 500
     damping_factor = 0.15
- #   decay_factor = options.decay_factor
 
     graph = init_graph(file_path)
 

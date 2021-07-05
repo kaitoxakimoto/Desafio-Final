@@ -1,20 +1,24 @@
 import networkx as nx
-from networkx.algorithms.link_analysis.pagerank_alg import pagerank
 from src.utils.utils import init_graph
-import numpy as np
 from src.PageRank import PageRank
-from numpy import array
 import matplotlib.pyplot as plt
+from optparse import OptionParser
 
+optparser = OptionParser()
+optparser.add_option('-f', '--input_file',
+                        dest='input_file',
+                        help='CSV filename',
+                        default='dataset/node.txt')
 
-filename = './dataset/node.txt'
+(options, args) = optparser.parse_args()
+file_path = options.input_file
 
 def pagerank_calculation(iteration, graph, damping_factor):
     PageRank(graph, damping_factor, iteration)
     pagerank_list = graph.get_pagerank_list()
     return pagerank_list
 
-graph = init_graph(filename)
+graph = init_graph(file_path)
 graph.display()
 pesos = pagerank_calculation(500,graph,0.15)
 

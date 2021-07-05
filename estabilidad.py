@@ -1,10 +1,20 @@
 from src.utils.utils import init_graph
 from src.PageRank import PageRank_one_iter
 import matplotlib.pyplot as plt
+from optparse import OptionParser
 
-damping_factor = 0.1
+optparser = OptionParser()
+optparser.add_option('-f', '--input_file',
+                        dest='input_file',
+                        help='CSV filename',
+                        default='dataset/node.txt')
+
+(options, args) = optparser.parse_args()
+file_path = options.input_file
+
+damping_factor = 0.15
 iteration = 10
-file_path = 'dataset/node.txt'
+
 
 graph = init_graph(file_path)
 
