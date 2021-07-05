@@ -4,16 +4,7 @@ import itertools
 import random
 import time
 import matplotlib.pyplot as plt
-from optparse import OptionParser
 
-optparser = OptionParser()
-optparser.add_option('-f', '--input_file',
-                        dest='input_file',
-                        help='CSV filename',
-                        default='dataset/node.txt')
-
-(options, args) = optparser.parse_args()
-file_path = options.input_file
 
 def create_graph(node_num):
     edges = []
@@ -24,7 +15,7 @@ def create_graph(node_num):
         edge = random.choice(edge_pool)
         edges.append(edge)
 
-    with open(file_path, 'w') as f:
+    with open('dataset/tiempo.txt', 'w') as f:
         for edge in edges:
             f.write(f'{edge[0]},{edge[1]}\n')
 
